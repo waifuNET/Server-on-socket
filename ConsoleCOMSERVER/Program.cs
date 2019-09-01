@@ -80,7 +80,6 @@ namespace ConsoleCOMSERVER
                             byte[] msg = Encoding.UTF8.GetBytes(data);
                             for (int i = 0; i < handler.Count; i++)
                             {
-                                Console.WriteLine(handler[i].LocalEndPoint);
                                 //if (handler[i] != socket)
                                 handler[i].Send(msg);
                             }
